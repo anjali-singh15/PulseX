@@ -1,0 +1,16 @@
+{
+  "name": "pulsex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PulseX — Customer 360° Digital Twin (CRM-04)",
+  "scripts": {
+    "setup": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body { @apply bg-canvas text-ink font-sans text-[14px] leading-relaxed; font-feature-settings: 'tnum' 1; }
+  h1, h2, h3 { @apply text-ink; letter-spacing: -0.01em; }
+  :focus-visible { outline: 2px solid #0E4D64; outline-offset: 2px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+}
+
+@layer components {
+  .card { @apply bg-white border border-line rounded-lg shadow-card; }
+  .card-pad { @apply p-5; }
+  .card-title { @apply text-[15px] font-semibold text-ink; }
+  .card-sub { @apply text-[13px] text-muted; }
+  .btn { @apply inline-flex items-center justify-center gap-2 h-9 px-3.5 rounded-md text-[13px] font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap; }
+  .btn-primary { @apply btn bg-brand text-white hover:bg-brand-dark; }
+  .btn-secondary { @apply btn bg-white text-ink border border-line hover:bg-canvas; }
+  .btn-ghost { @apply btn text-muted hover:text-ink hover:bg-canvas; }
+  .btn-danger { @apply btn bg-atrisk text-white hover:opacity-90; }
+  .btn-sm { @apply h-8 px-2.5 text-[12.5px]; }
+  .input { @apply h-9 w-full rounded-md border border-line bg-white px-3 text-[13.5px] text-ink placeholder:text-muted/70 focus:outline-none focus:ring-2 focus:ring-brand/25 focus:border-brand; }
+  .textarea { @apply input h-auto py-2 min-h-[84px] resize-y; }
+  .label { @apply block text-[12.5px] font-medium text-muted mb-1; }
+  .chip { @apply inline-flex items-center gap-1.5 h-7 px-2.5 rounded-full border text-[12.5px] font-medium transition-colors; }
+  .chip-on { @apply chip bg-ink text-white border-ink; }
+  .chip-off { @apply chip bg-white text-muted border-line hover:text-ink; }
+  .th { @apply text-left text-[12px] font-medium text-muted px-4 py-2.5 border-b border-line bg-[#F8FAF9] whitespace-nowrap; }
+  .td { @apply px-4 py-3 border-b border-line text-[13.5px] align-middle; }
+  .kpi-label { @apply text-[12.5px] text-muted; }
+  .kpi-value { @apply text-[22px] font-semibold text-ink leading-tight; }
+  .page-title { @apply text-[22px] font-semibold text-ink; }
+  .page-sub { @apply text-[13.5px] text-muted mt-0.5 max-w-3xl; }
+  .link { @apply text-brand hover:underline underline-offset-2; }
+  .num { font-variant-numeric: tabular-nums; }
+}

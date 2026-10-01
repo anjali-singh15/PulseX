@@ -1,0 +1,62 @@
+// Realistic message and activity text used by the seed generator.
+module.exports = {
+  email: {
+    positive: [
+      'Thanks for the smooth rollout at our plant, the team is happy with the results.',
+      'Great support on last week\'s upgrade. Really appreciate the quick turnaround.',
+      'The analytics dashboards are excellent, leadership is impressed.',
+      'Happy to confirm the renewal. We would like to expand to another site next quarter.',
+      'Thank you for the helpful training session, adoption is going well.',
+      'Pleased with the new release, the reports load quickly now.',
+    ],
+    neutral: [
+      'Sharing the updated purchase order for next quarter, please review.',
+      'Can we schedule the quarterly business review for next week?',
+      'Please send the revised invoice with our new GST number.',
+      'Requesting the product roadmap document for the coming quarter.',
+      'Adding our new finance controller to this thread for future invoices.',
+      'Please confirm the delivery schedule for the next batch of licences.',
+    ],
+    negative: [
+      'We are frustrated with the repeated delays in ticket responses.',
+      'The ERP integration is still not working and this is causing issues for our finance team.',
+      'Disappointed with the service this month. We are escalating this internally.',
+      'Poor response time again. We are looking at alternatives for next year.',
+      'Invoices keep showing the wrong amounts. This is unacceptable.',
+    ],
+  },
+  whatsapp: {
+    positive: ['Thanks, the fix works perfectly.', 'Great session today, team was pleased.', 'Dashboard looks excellent now, thank you!', 'Appreciate the quick call, all good from our side.'],
+    neutral: ['Can you share the invoice copy?', 'Call at 4 pm works for us.', 'Sending the site access details shortly.', 'Please share the updated quote.'],
+    negative: ['Still no response on the ticket. Very frustrating.', 'Dashboard down again, this is unacceptable.', 'Data sync failed again today, please escalate.', 'Very unhappy with the delays this week.'],
+  },
+  web: [
+    'Visited pricing page for Analytics Add-on',
+    'Downloaded the IoT Connect implementation guide',
+    'Read 4 help-centre articles on report scheduling',
+    'Registered for the product webinar',
+    'Viewed the case study for manufacturing analytics',
+    'Visited integrations page (SAP, Tally)',
+  ],
+  purchases: [
+    'Annual subscription instalment — Core Platform',
+    'Additional seats — Core Platform',
+    'Analytics Add-on licences',
+    'IoT Connect gateway devices and setup',
+    'Premium Support renewal',
+    'Professional services — implementation sprint',
+  ],
+  complaints: [
+    ['Delayed delivery of replacement sensors', 'Sensor replacements promised last week have still not arrived. Production is affected.'],
+    ['Billing discrepancy on last invoice', 'Invoice shows 40 seats instead of the 32 we have. Please correct this error.'],
+    ['Dashboard downtime during month-end close', 'Reports were down for 5 hours on the last working day. This caused problems for finance.'],
+    ['Data sync failures with ERP', 'Nightly sync with SAP failed three times this week. Orders are missing.'],
+    ['Slow response from field support team', 'Field engineer visit was delayed by four days. Very frustrating experience.'],
+    ['Wrong configuration pushed to plant devices', 'Update pushed the wrong configuration to 12 gateways. Lines were stopped.'],
+  ],
+  tickets: ['Request to add SSO for new subsidiary', 'How to export audit logs', 'User unable to reset password', 'Question about API rate limits'],
+  firstNames: ['Rahul', 'Priya', 'Anil', 'Sneha', 'Vikram', 'Meera', 'Arjun', 'Kavya', 'Rohan', 'Ananya', 'Sanjay', 'Divya', 'Karthik', 'Neha', 'Aditya', 'Pooja', 'Manish', 'Lakshmi', 'Imran', 'Farah'],
+  lastNames: ['Mehta', 'Sharma', 'Iyer', 'Reddy', 'Nair', 'Kulkarni', 'Gupta', 'Rao', 'Desai', 'Menon', 'Joshi', 'Bose', 'Kapoor', 'Pillai', 'Chatterjee', 'Shaikh'],
+  roles: ['Head of Operations', 'Procurement Manager', 'Finance Controller', 'IT Director', 'Plant Head', 'CFO', 'VP Digital'],
+  owners: ['Aarav Malhotra', 'Ishita Rao', 'Nikhil Verma', 'Tanvi Kulkarni'],
+};
